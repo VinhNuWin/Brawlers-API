@@ -7,6 +7,7 @@ app.use(cors())
 
 const brawlers = {
     'frank':{
+        'brawlerName': 'Frank',
         'health': 7000,
         'attDmg': 1240,
         'attRange': 6,
