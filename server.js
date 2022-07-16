@@ -16,7 +16,14 @@ const brawlers = {
         'attRange': 3,
         'reloadSpeed': '.8s',
         'moveSpeed': 770
-    }, 
+    },
+    'unknown':{
+        'health': 0,
+        'attDmg': 'unknown',
+        'attRange': 'unknown',
+        'reloadSpeed': 'unknown',
+        'moveSpeed': 'unknown'
+    } 
 }
 
 app.get('/', (request, response)=>{
@@ -30,7 +37,7 @@ app.get('/api/:name',(request,response)=>{
     }else{
         response.json(rappers['unknown'])
     }
-    
+
 })
 
 app.listen(PORT, ()=>{
